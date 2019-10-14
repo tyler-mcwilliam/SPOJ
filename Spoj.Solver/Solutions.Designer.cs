@@ -64,10 +64,15 @@ namespace Spoj.Solver {
         ///   Looks up a localized string similar to using System;
         ///using System.Linq;
         ///
-        ///public static class ARMY
+        ///// https://www.spoj.com/problems/ADDREV/
+        ///// Returns the reversed sum of two reversed integers
+        ///public static class ADDREV
         ///{
-        ///    public static string Solve(int[] godzillaStrengths, int[] mechaGodzillaStrengths)
-        ///        =&gt; godzillaStrengths.Max() &gt;= mechaGodzillaStrengths.Max() ? &quot;Godzilla&quot; : &quot;MechaGodzilla&quot;;
+        ///    public static int Solve(int a, int b)
+        ///        =&gt; Reverse(Reverse(a) + Reverse(b));
+        ///
+        ///    private static int Reverse(int a)
+        ///        =&gt; int.Parse(new string(a.ToString().Reverse().ToArray()));
         ///}
         ///
         ///public static class Program
@@ -75,10 +80,33 @@ namespace Spoj.Solver {
         ///    private static void Main()
         ///    {
         ///        int remainingTestCases = int.Parse(Console.ReadLine());
-        ///        while (remainingTestCases-- &gt; 0)
-        ///        {
-        ///            Console.ReadLine();
-        ///            Console.ReadLine();        /// [rest of string was truncated]&quot;;.
+        ///         [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string ADDREV {
+            get {
+                return ResourceManager.GetString("ADDREV", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to using System;
+        ///using System.Linq;
+        ///
+        ///// https://www.spoj.com/problems/ARMY/
+        ///// Determines the winner of a hypothetical battle
+        ///// between the armies of Godzilla and MechaGodzilla.
+        ///public static class ARMY
+        ///{
+        ///    public static string Solve(int[] godzillaStrengths, int[] mechaGodzillaStrengths)
+        ///        =&gt; godzillaStrengths.Max() &gt;= mechaGodzillaStrengths.Max()
+        ///        ? &quot;Godzilla&quot; : &quot;MechaGodzilla&quot;;
+        ///}
+        ///
+        ///public static class Program
+        ///{
+        ///    private static void Main()
+        ///    {
+        ///        int remainingTestCase [rest of string was truncated]&quot;;.
         /// </summary>
         public static string ARMY {
             get {
