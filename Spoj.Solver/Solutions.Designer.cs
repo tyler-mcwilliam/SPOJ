@@ -61,6 +61,32 @@ namespace Spoj.Solver {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to using System;
+        ///using System.Linq;
+        ///
+        ///public static class ARMY
+        ///{
+        ///    public static string Solve(int[] godzillaStrengths, int[] mechaGodzillaStrengths)
+        ///        =&gt; godzillaStrengths.Max() &gt;= mechaGodzillaStrengths.Max() ? &quot;Godzilla&quot; : &quot;MechaGodzilla&quot;;
+        ///}
+        ///
+        ///public static class Program
+        ///{
+        ///    private static void Main()
+        ///    {
+        ///        int remainingTestCases = int.Parse(Console.ReadLine());
+        ///        while (remainingTestCases-- &gt; 0)
+        ///        {
+        ///            Console.ReadLine();
+        ///            Console.ReadLine();        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string ARMY {
+            get {
+                return ResourceManager.GetString("ARMY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to #ad-hoc
         ///#bfs
         ///#big-numbers
@@ -134,9 +160,7 @@ namespace Spoj.Solver {
         ///public static class Program
         ///{
         ///    public static void Main()
-        ///    {
-        ///        TEST.Solve();
-        ///    }
+        ///        =&gt; TEST.Solve();
         ///}.
         /// </summary>
         public static string TEST {
